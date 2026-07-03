@@ -1,0 +1,18 @@
+﻿/*
+  Access-Control-Allow-Origin: *
+
+/Build/*.wasm
+  Content-Type: application/wasm
+  Content-Encoding: identity
+
+/Build/*.data
+  Content-Type: application/octet-stream
+  Content-Encoding: identity
+
+/Build/*.js
+  Content-Type: application/javascript
+  Content-Encoding: identity
+
+/Build/*.framework.js
+  Content-Type: application/javascript
+  Content-Encoding: identity

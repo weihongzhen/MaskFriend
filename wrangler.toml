@@ -1,0 +1,5 @@
+﻿name = "maskfriend"
+type = "pages"
+
+[pages]
+build_output_dir = "."
