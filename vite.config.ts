@@ -8,14 +8,14 @@ export default defineConfig({
     sourcemap: 'hidden',
   },
   plugins: [react(), tsconfigPaths(), tailwindcss()],
-  base: '/MaskBoyFriend/',
-  server: {
-    proxy: {
-      '/api': {
+  base: '/MaskFriend/',
+    server: {
+      proxy: {
+        '/api': {
         target: 'https://ws-d8ze7gqhycwsltbd.cn-beijing.maas.aliyuncs.com',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '/compatible-mode'),
-      },
+      changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/api/, '/compatible-mode'),
+    },
     },
   },
 })
